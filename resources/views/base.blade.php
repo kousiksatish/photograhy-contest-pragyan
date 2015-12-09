@@ -46,6 +46,7 @@
              <li class="scroll"><a href="#about">Rules</a></li>
              <li class="scroll"><a href="#animated-number">Judging</a></li>
              <li class="scroll"><a href="#blog">Sponsors</a></li>
+             <li class="scroll"><a href={{action('RegisterController@create')}}>Register</a></li>
             </ul>
         </div>
       </div>

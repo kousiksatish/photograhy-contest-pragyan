@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('base');
-});
+Route::get('/', 'RegisterController@index');
+Route::get('/register', 'RegisterController@create');
+Route::post('/register', 'RegisterController@store');
