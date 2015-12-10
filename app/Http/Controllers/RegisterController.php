@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -60,6 +61,19 @@ class RegisterController extends Controller
             $reg->coll_city = $request->get('city');
             $reg->coll_dept = $request->get('dept');
             $reg->coll_year = $request->get('year');
+        }
+
+        $rules = array(
+                'photo1'=> 'required|image|max:8000',
+                'photo2'=> 'image|max:8000',
+                'photo3'=> 'image|max:8000'
+            );
+
+        $validator = Validator::make($request->all(), $rules);
+
+        if ($validator->fails())
+        {
+            return view('reg_failure', array('message'=>'File uploaded not a <8mb sized image'));
         }
         $destinationPath = base_path() . '/public/prelims/'; // upload path
         $extension = $request->file('photo1')->getClientOriginalExtension(); // getting image extension
