@@ -64,7 +64,7 @@
                     <h2 class="text-center wow">Preliminary Round</h2>
                     <div class="media service-box wow fadeInRight">
                         <p>
-<form class="form-horizontal" method="POST" action={{ action('RegisterController@store')}}>
+{!! Form::open(array("url"=>action('RegisterController@store'),"class"=>"form-horizontal",'files' => true))!!}
   <div class="form-group">
     <label class="control-label col-sm-2" for="name"><center>Name</center></label>
     <div class="col-sm-6">
@@ -100,28 +100,29 @@
   <div class="form-group">
     <label class="control-label col-sm-2" for="collname"><center>College Name</center></label>
     <div class="col-sm-6">
-      <input type="text" class="form-control" name="collname" id="collname" placeholder="College Name" required disabled>
+      <input type="text" class="form-control" name="collname" id="collname" placeholder="College Name" disabled>
     </div>
   </div>
   <div class="form-group">
     <label class="control-label col-sm-2" for="degree"><center>Degree</center></label>
     <div class="col-sm-6">
-      <input type="text" class="form-control" name="degree" id="degree" placeholder="Degree" required disabled>
+      <input type="text" class="form-control" name="degree" id="degree" placeholder="Degree" disabled>
     </div>
   </div>
   <div class="form-group">
     <label class="control-label col-sm-2" for="dept"><center>Department</center></label>
     <div class="col-sm-6">
-      <input type="text" class="form-control" name="dept" id="dept" placeholder="Department" required disabled>
+      <input type="text" class="form-control" name="dept" id="dept" placeholder="Department" disabled>
     </div>
   </div>
 
   <div class="form-group">
     <label class="control-label col-sm-2" for="year"><center>Year of passing</center></label>
     <div class="col-sm-6">
-      <input type="number" class="form-control" name="year" id="year" placeholder="Year of passing" min="2016" required disabled>
+      <input type="number" class="form-control" name="year" id="year" placeholder="Year of passing" min="2016" disabled>
     </div>
   </div>  
+
 
 
   <div class="form-group">
@@ -130,7 +131,7 @@
       <button type="submit" class="btn btn-success">Submit</button>
     </div>
   </div>
-</form>
+{!! Form::close() !!}
 
 
                         </p>
@@ -169,6 +170,10 @@
         }
         else if(this.value == "no")
         {
+          $("#year").val('');
+          $("#collname").val('');
+          $("#dept").val('');
+          $("#degree").val('');
           $("#year").attr('disabled', 'true');
           $("#collname").attr('disabled', 'true');
           $("#dept").attr('disabled', 'true');
