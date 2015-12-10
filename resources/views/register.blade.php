@@ -104,6 +104,12 @@
     </div>
   </div>
   <div class="form-group">
+    <label class="control-label col-sm-2" for="city"><center>City</center></label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name="city" id="city" placeholder="City" disabled>
+    </div>
+  </div>
+  <div class="form-group">
     <label class="control-label col-sm-2" for="degree"><center>Degree</center></label>
     <div class="col-sm-6">
       <input type="text" class="form-control" name="degree" id="degree" placeholder="Degree" disabled>
@@ -148,7 +154,7 @@
     </div>
 
   <div class="form-group">
-  <label class="control-label col-sm-2" for="year"><center></center></label>
+  <label class="control-label col-sm-2"><center></center></label>
     <div class="col-sm-6">
       <button type="submit" class="btn btn-success">Submit</button>
     </div>
@@ -186,6 +192,7 @@
         if(this.value == "yes")
         {
           $("#year").removeAttr('disabled');
+          $("#city").removeAttr('disabled');
           $("#collname").removeAttr('disabled');
           $("#dept").removeAttr('disabled');
           $("#degree").removeAttr('disabled');
@@ -196,10 +203,12 @@
           $("#collname").val('');
           $("#dept").val('');
           $("#degree").val('');
+          $("#city").val('');
           $("#year").attr('disabled', 'true');
           $("#collname").attr('disabled', 'true');
           $("#dept").attr('disabled', 'true');
           $("#degree").attr('disabled', 'true');
+          $("#city").attr('disabled', 'true');
         }
     });
 

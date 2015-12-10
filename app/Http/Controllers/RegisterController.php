@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Register as Register;
 class RegisterController extends Controller
 {
     /**
@@ -31,6 +32,12 @@ class RegisterController extends Controller
         return view('register');
     }
 
+    public function success()
+    {
+        //
+        return view('reg_success');
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -40,6 +47,42 @@ class RegisterController extends Controller
     public function store(Request $request)
     {
         //
+        $reg = new Register;
+        $reg->name = $request->get('name');
+        $reg->mobile = $request->get('mobile');
+        $reg->email = $request->get('email');
+        $stud = $request->get('student');
+        if($stud == 'yes')
+        {
+            $reg->student = 1;
+            $reg->coll_name = $request->get('collname');
+            $reg->coll_degree = $request->get('degree');
+            $reg->coll_city = $request->get('city');
+            $reg->coll_dept = $request->get('dept');
+            $reg->coll_year = $request->get('year');
+        }
+        $destinationPath = base_path() . '/public/prelims/'; // upload path
+        $extension = $request->file('photo1')->getClientOriginalExtension(); // getting image extension
+        $fileName = str_replace(' ', '_', $reg->name) . substr($reg->mobile, 0, 5) . '_1.'.$extension; // renameing image
+        $request->file('photo1')->move($destinationPath, $fileName); 
+        $reg->img1_url = 'prelims/'.$fileName;
+
+        $destinationPath = base_path() . '/public/prelims/'; // upload path
+        $extension = $request->file('photo2')->getClientOriginalExtension(); // getting image extension
+        $fileName = str_replace(' ', '_', $reg->name) . substr($reg->mobile, 0, 5) . '_2.'.$extension; // renameing image
+        $request->file('photo2')->move($destinationPath, $fileName); 
+        $reg->img2_url = 'prelims/'.$fileName;
+
+        $destinationPath = base_path() . '/public/prelims/'; // upload path
+        $extension = $request->file('photo3')->getClientOriginalExtension(); // getting image extension
+        $fileName = str_replace(' ', '_', $reg->name) . substr($reg->mobile, 0, 5) . '_3.'.$extension; // renameing image
+        $request->file('photo3')->move($destinationPath, $fileName); 
+        $reg->img3_url = 'prelims/'.$fileName;
+
+        $reg->save();
+
+        return redirect('register/success');
+
     }
 
     /**
