@@ -135,10 +135,7 @@
         </div>
     </section>
 
-    <section id="cta2" style="background:#20222e url(cd images/work-process/bg.jpg) no-repeat 0 0">
-
-    </section>
-
+ 
     <section id="prizes" style="padding-top:100px">
         <div class="container">
             <div class="section-header">
@@ -394,12 +391,12 @@ Free 3 month subscription on Ezine on Magster for all participants.  </b></p>   
                 <h3>Associate Partners</h3>
                 
                 <div class="row">
-                  <div class="row"><img src="images/logos/pixelscapes.jpg"></div>
+                  <div class="row"><img src="{{asset('images/logos/pixelscapes.jpg')}}"></div>
                   <div class="row">Pixelscape</div>
                 </div>
                 
                 <div class="row">
-                  <div class="row"><img src="images/logos/SP.jpg"></div>
+                  <div class="row"><img src="{{asset('images/logos/SP.jpg')}}"></div>
                   <div class="row">Smart Photography</div>
                 </div>
 
@@ -410,7 +407,7 @@ Free 3 month subscription on Ezine on Magster for all participants.  </b></p>   
                 <h3>Event Partners</h3>
                 
                 <div class="row">
-                  <div class="row"><img src="images/logos/IIP.jpg"></div>
+                  <div class="row"><img src="{{asset('images/logos/IIP.jpg')}}"></div>
                   <div class="row">Inspiro India</div>
                 </div>
 
@@ -419,11 +416,11 @@ Free 3 month subscription on Ezine on Magster for all participants.  </b></p>   
               <div class="col-md-4 col-xs-12">
                 <h3>Photography Partners</h3>
                   <div class="row">
-                    <div class="row"><img src="images/logos/ClickingPhotos.jpg"></div>
+                    <div class="row"><img src="{{asset('images/logos/ClickingPhotos.jpg')}}"></div>
                     <div class="row">Clicking Photos</div>
                   </div>
                   <div class="row">
-                    <div class="row"><img src="images/logos/IIP.jpg"></div>
+                    <div class="row"><img src="{{asset('images/logos/IIP.jpg')}}"></div>
                     <div class="row">Indian Institute of Photography</div>
                   </div>
                 </div>
@@ -443,7 +440,7 @@ Free 3 month subscription on Ezine on Magster for all participants.  </b></p>   
 
     <script src="{{asset('js/jquery.js')}}"></script>
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    
     <script src="{{asset('js/owl.carousel.min.js')}}"></script>
     <script src="{{asset('js/mousescroll.js')}}"></script>
     <script src="{{asset('js/smoothscroll.js')}}"></script>
