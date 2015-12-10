@@ -133,22 +133,25 @@
       <label class="control-label col-sm-2" for="photo1"><center>Photograph 1</center></label>
       <div class="col-sm-6">
           <input type="file" name="photo1" id="photo1" required>
+          <textarea class="form-control"placeholder="Small description..." name="desc1" required></textarea>
           <canvas id="imageCanvas1"></canvas>
       </div>
     </div>
 
    <div class="form-group">
-      <label class="control-label col-sm-2" for="photo2"><center>Photograph 2</center></label>
+      <label class="control-label col-sm-2" for="photo2"><center>Photograph 2 (optional)</center></label>
       <div class="col-sm-6">
-          <input type="file" name="photo2" id="photo2" required>
+          <input type="file" name="photo2" id="photo2" >
+          <textarea class="form-control" placeholder="Small description..." name="desc2" ></textarea>
           <canvas id="imageCanvas2"></canvas>
       </div>
     </div>
 
      <div class="form-group">
-      <label class="control-label col-sm-2" for="photo3"><center>Photograph 3</center></label>
+      <label class="control-label col-sm-2" for="photo3"><center>Photograph 3 (optional)</center></label>
       <div class="col-sm-6">
-          <input type="file" name="photo3" id="photo3" required>
+          <input type="file" name="photo3" id="photo3" >
+          <textarea class="form-control" placeholder="Small description..." name="desc3" ></textarea>
           <canvas id="imageCanvas3"></canvas>
       </div>
     </div>

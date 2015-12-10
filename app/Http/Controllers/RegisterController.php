@@ -66,19 +66,25 @@ class RegisterController extends Controller
         $fileName = str_replace(' ', '_', $reg->name) . substr($reg->mobile, 0, 5) . '_1.'.$extension; // renameing image
         $request->file('photo1')->move($destinationPath, $fileName); 
         $reg->img1_url = 'prelims/'.$fileName;
-
+        if($request->file('photo2'))
+        {
         $destinationPath = base_path() . '/public/prelims/'; // upload path
         $extension = $request->file('photo2')->getClientOriginalExtension(); // getting image extension
         $fileName = str_replace(' ', '_', $reg->name) . substr($reg->mobile, 0, 5) . '_2.'.$extension; // renameing image
         $request->file('photo2')->move($destinationPath, $fileName); 
         $reg->img2_url = 'prelims/'.$fileName;
-
+        }
+        if($request->file('photo2'))
+        {
         $destinationPath = base_path() . '/public/prelims/'; // upload path
         $extension = $request->file('photo3')->getClientOriginalExtension(); // getting image extension
         $fileName = str_replace(' ', '_', $reg->name) . substr($reg->mobile, 0, 5) . '_3.'.$extension; // renameing image
         $request->file('photo3')->move($destinationPath, $fileName); 
         $reg->img3_url = 'prelims/'.$fileName;
-
+        }
+        $reg->desc1 = $request->get('desc1');
+        $reg->desc2 = $request->get('desc2');
+        $reg->desc3 = $request->get('desc3');
         $reg->save();
 
         return redirect('register/success');
