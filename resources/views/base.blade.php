@@ -52,6 +52,7 @@
       </div>
     </nav>
   </header>
+
   <section id="main-slider">
       <div class="owl-carousel">
           <div class="item" style="background-image: url(images/hd.jpg);">
@@ -102,7 +103,7 @@
                     <h2 class="text-center wow">Preliminary Round</h2>
                     <div class="media service-box wow fadeInRight">
                         <p>This will be an eliminative round for the event. Participants can submit a maximum of
-    three photographs for the round, based on any scientific phenomena along with
+    three photographs for the round, based on any scientific phenomenaalong with
     brief descriptions of the photographs captured.</p>
                     </div>
 
@@ -142,16 +143,14 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown headd">Prizes</h2>
-                <p class="text-center wow fadeInDown">There are mainly 4 types of prizes based as judged by the judges</p>
             </div>
 
             <div class="row">
                 <div class="col-sm-6">
                     <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <article>
+                        <article class="media clearfix">
                             <header class="entry-header">
                                 <div class="entry-thumbnail">
-                                    <span class="post-format post-format-video"><i class="fa fa-film"></i></span>
                                 </div>
 
                                 <h2 class="entry-title"><a href="#">Special Prize</a></h2>
@@ -170,20 +169,21 @@
                 </div><!--/.col-sm-6-->
                 <div class="col-sm-6">
                     <div class="blog-post blog-media wow fadeInRight" data-wow-duration="300ms" data-wow-delay="100ms">
-
-
                         <article class="media clearfix">
-                            <div class="entry-thumbnail pull-left">
-                                <span class="post-format post-format-gallery"><i class="fa fa-camera"></i></span>
-                            </div>
+                            
                             <div class="media-body">
                                 <header class="entry-header">
 
-                                    <h2 class="entry-title"><a href="#">Winner</a></h2>
+                                    <h2 class="entry-title"><a href="#">Judge's Prize</a></h2>
                                 </header>
 
                                 <div class="entry-content">
-                                    <P>The winner gets a prize money of Rs. </P>
+                                    <P>The top 3 contestants with highest cumulative scores at the end of final round will be
+awarded prizes in the order: Winner, First Runner‐up and Second Runner‐up. 
+Top winners may get an opportunity to collaboratively work with Judge 1 or Judge 2 
+on their upcoming photography projects.
+The  top  winners  and  the shortlisted  participants  will  be  getting  75$  worth  500px 
+accounts with full access.</P>
 
                                 </div>
 
@@ -191,47 +191,22 @@
                             </div>
                         </article>
                     </div>
-                    <div class="blog-post blog-media wow fadeInRight" data-wow-duration="300ms" data-wow-delay="200ms">
-                        <article class="media clearfix">
-                            <div class="entry-thumbnail pull-left">
-                                <span class="post-format post-format-audio"><i class="fa fa-camera"></i></span>
-                            </div>
-                            <div class="media-body">
-                                <header class="entry-header">
-
-                                    <h2 class="entry-title"><a href="#">Runner-up</a></h2>
-                                </header>
-
-                                <div class="entry-content">
-                                    <P>The Runner-up gets a prize money of Rs:</P>
-
-                                </div>
-
-
-                            </div>
-                        </article>
-                        <article class="media clearfix">
-                            <div class="entry-thumbnail pull-left">
-                                <span class="post-format post-format-audio"><i class="fa fa-camera"></i></span>
-                            </div>
-                            <div class="media-body">
-                                <header class="entry-header">
-
-                                    <h2 class="entry-title"><a href="#">Second Runner-up</a></h2>
-                                </header>
-
-                                <div class="entry-content">
-                                    <P>The second runner up gets a prize money of Rs:</P>
-
-                                </div>
-
-
-                            </div>
-                        </article>
-                    </div>
+                    
                 </div>
             </div>
 
+        </div>
+        <div class="container" style="padding-bottom:100px">
+            <div class="media service-box wow fadeInRight">
+                       <p><b>Winners  will  get  free  6  months  subscription  for  Inspiro  India  and  Smart
+
+Photography along with 1 year subscription on Ezine on Magster. Top participants 
+
+The winning photographs will be featured in Inspiro India and Smart Photography 
+
+magazines.
+
+Free 3 month subscription on Ezine on Magster for all participants.  </b></p>    </div>
         </div>
     </section>
 
@@ -241,7 +216,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Details</h2>
-                <p class="text-center wow fadeInDown">Some of the specifications are listed as:</p>
+                <p class="text-center wow fadeInDown">The Photography Specifications are listed as follows:</p>
             </div>
             <div class="container specs">
                 <div class="col-md-6">
@@ -282,35 +257,46 @@
             </div>
 
             <div class="row text-center ">
-              <div class="col-md-4  col-xs-12">
+              <div class="col-md-3  col-xs-12" style="padding-top:30px">
                 <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
-                    <p>Deadline for submission of first round</p>
+                    <p>Deadline for submission of 1<sup>st</sup> round</p>
                 </div>
                 <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
                     <div style="font-size:1.5em">
-                      <span>15</span>
+                      <span>25</span>
                       DEC
                     </div>
                 </div>
               </div>
-              <div class="col-md-4 col-xs-12">
+              <div class="col-md-3 col-xs-12" style="padding-top:30px">
                 <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
                       <p> Announcement of shortlist </p>
                 </div>
                 <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
                   <div style="font-size:1.5em">
-                    <span>20</span>
-                    DEC
+                    <span>1</span>
+                    JAN
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-xs-12">
+              <div class="col-md-3 col-xs-12" style="padding-top:30px">
                   <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
-                        <p>Deadline for submission of second round</p>
+                        <p>Deadline for submission of 2<sup>nd</sup> round</p>
                   </div>
                   <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
                     <div  style="font-size:1.5em">
-                      <span>20</span>
+                      <span>15</span>
+                      JAN
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-xs-12" style="padding-top:30px">
+                  <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
+                        <p>Announcement of Results</p>
+                  </div>
+                  <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
+                    <div  style="font-size:1.5em">
+                      <span>26</span>
                       JAN
                     </div>
                   </div>
@@ -325,7 +311,16 @@
                 <h2 class="section-title text-center wow fadeInDown">RULES</h2>
                 <p class="text-center wow fadeInDown">The Rules and Regualations that has to be followed throughout the photography contest are:</p>
             </div>
-
+            <div class="row"> 
+            <div class="col-sm-12 wow fadeInRight rules">
+              <h3 class="column-title">Instructions</h3>
+                <ul>
+                  <li><p class="wow fadeInDown">Like our Facebook page Pragyan to be eligible to participate in this competition.</p></li>
+                  <li><p class="wow fadeInDown">Click an original picture which conforms to all the rules mentioned below.</p></li>
+                  <li><p class="wow fadeInDown">Submit your entries to highdefinition@pragyan.org</p></li>
+                </ul>
+            </div>
+            </div>
             <div class="row">
                 <div class="col-sm-6 wow fadeInLeft">
                     <h3 class="column-title"></h3>
@@ -355,7 +350,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Judging</h2>
-                <p class="text-center wow fadeInDown">The Photographs will be judges based on:</p>
+                <p class="text-center wow fadeInDown">The Photographs will be judged based on:</p>
             </div>
 
             <div class="row text-center">
@@ -393,26 +388,45 @@
             </div>
 
             <div class="row text-center ">
-                <div class="col-md-4">
+              
+              <div class="col-md-4">
+              
                 <h3>Associate Partners</h3>
-                  <p>
-                    Pixelscape<br>
-                    Smart Photography
-                  </p>
-            </div>
-            <div class="col-md-4 col-xs-12">
-            <h3>Event Partners</h3>
-            <p>
-    Inspiro India
-    </p>
-            </div>
-            <div class="col-md-4 col-xs-12">
-            <h3>Photography Partners</h3>
-            <p>
-    Clicking photos<br>
-    Indian institute of photography
-    </p>
-            </div>
+                
+                <div class="row">
+                  <div class="row"><img src="images/logos/pixelscapes.jpg"></div>
+                  <div class="row">Pixelscape</div>
+                </div>
+                
+                <div class="row">
+                  <div class="row"><img src="images/logos/SP.jpg"></div>
+                  <div class="row">Smart Photography</div>
+                </div>
+
+              </div>
+
+              <div class="col-md-4">
+              
+                <h3>Event Partners</h3>
+                
+                <div class="row">
+                  <div class="row"><img src="images/logos/IIP.jpg"></div>
+                  <div class="row">Inspiro India</div>
+                </div>
+
+              </div>
+            
+              <div class="col-md-4 col-xs-12">
+                <h3>Photography Partners</h3>
+                  <div class="row">
+                    <div class="row"><img src="images/logos/ClickingPhotos.jpg"></div>
+                    <div class="row">Clicking Photos</div>
+                  </div>
+                  <div class="row">
+                    <div class="row"><img src="images/logos/IIP.jpg"></div>
+                    <div class="row">Indian Institute of Photography</div>
+                  </div>
+                </div>
             </div>
         </div>
     </section>
