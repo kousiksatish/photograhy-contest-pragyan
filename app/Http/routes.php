@@ -14,4 +14,4 @@
 Route::get('/', 'RegisterController@index');
 Route::get('/register', 'RegisterController@create');
 Route::post('/register', 'RegisterController@store');
-Route::get('/register/success', 'RegisterController@success');
+

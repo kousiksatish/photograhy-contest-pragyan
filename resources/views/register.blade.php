@@ -20,7 +20,7 @@
     font-family: 'Montserrat', sans-serif;
   }
   </style>
-
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body id="home" class="homepage">
@@ -155,7 +155,13 @@
           <canvas id="imageCanvas3"></canvas>
       </div>
     </div>
-
+    <div class="form-group">
+  <label class="control-label col-sm-2"><center></center></label>
+    <div class="col-sm-6">
+      <div class="g-recaptcha" data-sitekey="6Le9yRITAAAAAH_8LEUx7Q-Ix-ZSkCwjIz3ZiFcK"></div>
+    </div>
+  </div>
+    
   <div class="form-group">
   <label class="control-label col-sm-2"><center></center></label>
     <div class="col-sm-6">

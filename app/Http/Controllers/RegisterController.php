@@ -85,9 +85,25 @@ class RegisterController extends Controller
         $reg->desc1 = $request->get('desc1');
         $reg->desc2 = $request->get('desc2');
         $reg->desc3 = $request->get('desc3');
-        $reg->save();
+        
+        $res = $request->get('g-recaptcha-response');
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL,"https://www.google.com/recaptcha/api/siteverify");
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS,
+            "secret=6Le9yRITAAAAAGyxQbEv040L2ki_b0oMT3NnSGoV&response=$res");
 
-        return redirect('register/success');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $api_res = curl_exec ($ch);
+
+        curl_close ($ch);
+        $response_arr = json_decode($api_res, true);
+
+        if(!$response_arr['success'])
+            return view('reg_failure', array('message'=>'Captcha verification failed...'));
+        
+        $reg->save();
+        return view('reg_success');
 
     }
 
