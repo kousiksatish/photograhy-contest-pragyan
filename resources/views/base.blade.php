@@ -59,7 +59,13 @@
               <div class="slider-inner">
                   <div class="container">
                       <div class="row">
+                        
                           <div class="col-sm-6">
+                          <h2 class="section-title text-center wow fadeInDown" style="color:#f5f5f5">High Definition</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Science lives with us in every moment of our lives. Just within one's range of sight,
+                science and its application, technology can be observed in every inch. At Pragyan, we
+                give you an opportunity to capture technology’s uniqueness in High Definition.</p>
+                 
                           </div>
                       </div>
                   </div>
@@ -70,6 +76,14 @@
                   <div class="container">
                       <div class="row">
                           <div class="col-sm-6">
+                        </div>
+                          <div class="col-sm-6">
+                          <h2 class="section-title text-center wow fadeInDown" style="color:#f5f5f5">High Definition</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.4s">Photography isn’t just an art powered by technology, it is also an innovative medium
+                to discover and capture the scientific phenomena omnipresent around us.
+                 In this celebration of technology, we present High Definition, Pragyan’s photography
+                contest that wants people to see the world through your definitions of technology.
+              </p>
                           </div>
                       </div>
                   </div>
@@ -77,21 +91,7 @@
           </div><!--/.item-->
       </div><!--/.owl-carousel-->
     </section>
-    <section class="work-process">
-      <div class="container">
-          <div class="section-header">
-            <h2 class="section-title text-center wow fadeInDown" style="color:#f5f5f5">High Definition</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Science lives with us in every moment of our lives. Just within one's range of sight,
-                science and its application, technology can be observed in every inch. At Pragyan, we
-                give you an opportunity to capture technology’s uniqueness in High Definition.</p>
-                 <p class="wow fadeInDown" data-wow-delay="0.4s">Photography isn’t just an art powered by technology, it is also an innovative medium
-                to discover and capture the scientific phenomena omnipresent around us.
-                 In this celebration of technology, we present High Definition, Pragyan’s photography
-                contest that wants people to see the world through your definitions of technology.
-              </p>
-          </div>
-      </div>
-    </section>
+    
     <section id="features">
         <div class="container ">
             <div class="section-header">
