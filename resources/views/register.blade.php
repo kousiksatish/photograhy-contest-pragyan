@@ -123,7 +123,29 @@
     </div>
   </div>  
 
+  <div class="form-group">
+      <label class="control-label col-sm-2" for="photo1"><center>Photograph 1</center></label>
+      <div class="col-sm-6">
+          <input type="file" name="photo1" id="photo1" required>
+          <canvas id="imageCanvas1"></canvas>
+      </div>
+    </div>
 
+   <div class="form-group">
+      <label class="control-label col-sm-2" for="photo2"><center>Photograph 2</center></label>
+      <div class="col-sm-6">
+          <input type="file" name="photo2" id="photo2" required>
+          <canvas id="imageCanvas2"></canvas>
+      </div>
+    </div>
+
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="photo3"><center>Photograph 3</center></label>
+      <div class="col-sm-6">
+          <input type="file" name="photo3" id="photo3" required>
+          <canvas id="imageCanvas3"></canvas>
+      </div>
+    </div>
 
   <div class="form-group">
   <label class="control-label col-sm-2" for="year"><center></center></label>
@@ -180,6 +202,69 @@
           $("#degree").attr('disabled', 'true');
         }
     });
+
+    var imageLoader1 = document.getElementById('photo1');
+    imageLoader1.addEventListener('change', handleImage1, false);
+    var canvas1 = document.getElementById('imageCanvas1');
+    var ctx1 = canvas1.getContext('2d');
+
+
+    function handleImage1(e){
+      console.log("cl");
+        var reader = new FileReader();
+        reader.onload = function(event){
+            var img = new Image();
+            img.onload = function(){
+                canvas1.width = img.width;
+                canvas1.height = img.height;
+                ctx1.drawImage(img,0,0);
+            }
+            img.src = event.target.result;
+        }
+        reader.readAsDataURL(e.target.files[0]);     
+    }
+
+    var imageLoader2 = document.getElementById('photo2');
+    imageLoader2.addEventListener('change', handleImage2, false);
+    var canvas2 = document.getElementById('imageCanvas2');
+    var ctx2 = canvas2.getContext('2d');
+
+
+    function handleImage2(e){
+        var reader = new FileReader();
+        reader.onload = function(event){
+            var img = new Image();
+            img.onload = function(){
+                canvas2.width = img.width;
+                canvas2.height = img.height;
+                ctx2.drawImage(img,0,0);
+            }
+            img.src = event.target.result;
+        }
+        reader.readAsDataURL(e.target.files[0]);     
+    }
+
+    var imageLoader3 = document.getElementById('photo3');
+    imageLoader3.addEventListener('change', handleImage3, false);
+    var canvas3 = document.getElementById('imageCanvas3');
+    var ctx3 = canvas3.getContext('2d');
+
+
+    function handleImage3(e){
+        var reader = new FileReader();
+        reader.onload = function(event){
+            var img = new Image();
+            img.onload = function(){
+                canvas3.width = img.width;
+                canvas3.height = img.height;
+                ctx3.drawImage(img,0,0);
+            }
+            img.src = event.target.result;
+        }
+        reader.readAsDataURL(e.target.files[0]);     
+    }
+
+  
     </script>
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
