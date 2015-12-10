@@ -88,7 +88,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12" style="text-align:center">
-                    &copy; 2016 Pragyan. Made with &hearts; <a href="#">Delta Force</a>
+                    Made with &hearts; <a href="#">Delta Force</a>
                 </div>
             </div>
         </div>

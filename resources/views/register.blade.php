@@ -6,7 +6,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Pragyan Photoshoot</title>
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel='stylesheet' type='text/css'>
   <link href="{{asset('/css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{asset('/css/font-awesome.min.css')}}" rel="stylesheet">
   <link href="{{asset('/css/animate.min.css')}}" rel="stylesheet">
@@ -179,7 +179,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12" style="text-align:center">
-                    &copy; 2016 Pragyan. Made with &hearts; <a href="#">Delta Force</a>
+                    Made with &hearts; <a href="#">Delta Force</a>
                 </div>
             </div>
         </div>
