@@ -208,16 +208,32 @@
     var canvas1 = document.getElementById('imageCanvas1');
     var ctx1 = canvas1.getContext('2d');
 
-
+    var MAXW = 500;
+    var MAXH = 500;
     function handleImage1(e){
       console.log("cl");
         var reader = new FileReader();
         reader.onload = function(event){
             var img = new Image();
             img.onload = function(){
-                canvas1.width = img.width;
-                canvas1.height = img.height;
-                ctx1.drawImage(img,0,0);
+                canvas1.width = 300;//img.width;
+                canvas1.height = 300;//img.height;
+                var iw = img.width;
+                var ih = img.height;
+                if(iw>ih)
+                {
+                  canvas1.width = MAXW;
+                  var ratio = MAXW/img.width;
+                  canvas1.height = ih*ratio;
+                }
+                else
+                {
+                  canvas1.height = MAXH;
+                  var ratio = MAXH/img.height;
+                  canvas1.width = iw*ratio;
+                }
+                ctx1.drawImage(img,0,0, img.width, img.height,
+                                    0,0, canvas1.width, canvas1.height);
             }
             img.src = event.target.result;
         }
@@ -237,7 +253,22 @@
             img.onload = function(){
                 canvas2.width = img.width;
                 canvas2.height = img.height;
-                ctx2.drawImage(img,0,0);
+                var iw = img.width;
+                var ih = img.height;
+                if(iw>ih)
+                {
+                  canvas2.width = MAXW;
+                  var ratio = MAXW/img.width;
+                  canvas2.height = ih*ratio;
+                }
+                else
+                {
+                  canvas2.height = MAXH;
+                  var ratio = MAXH/img.height;
+                  canvas2.width = iw*ratio;
+                }
+                ctx2.drawImage(img,0,0, img.width, img.height,
+                                    0,0, canvas2.width, canvas2.height);
             }
             img.src = event.target.result;
         }
@@ -257,7 +288,22 @@
             img.onload = function(){
                 canvas3.width = img.width;
                 canvas3.height = img.height;
-                ctx3.drawImage(img,0,0);
+                var iw = img.width;
+                var ih = img.height;
+                if(iw>ih)
+                {
+                  canvas3.width = MAXW;
+                  var ratio = MAXW/img.width;
+                  canvas3.height = ih*ratio;
+                }
+                else
+                {
+                  canvas3.height = MAXH;
+                  var ratio = MAXH/img.height;
+                  canvas3.width = iw*ratio;
+                }
+                ctx3.drawImage(img,0,0, img.width, img.height,
+                                    0,0, canvas3.width, canvas3.height);
             }
             img.src = event.target.result;
         }
