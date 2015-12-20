@@ -70,6 +70,19 @@ class RegisterController extends Controller
             $reg->coll_dept = $request->get('dept');
             $reg->coll_year = $request->get('year');
         }
+
+        $rules = array(
+                'photo1'=> 'required|image|max:8000',
+                'photo2'=> 'image|max:8000',
+                'photo3'=> 'image|max:8000'
+            );
+
+        $validator = Validator::make($request->all(), $rules);
+
+        if ($validator->fails())
+        {
+            return view('reg_failure', array('message'=>'File uploaded not a <8mb sized image'));
+        }
         $destinationPath = base_path() . '/public/prelims/'; // upload path
         $extension = $request->file('photo1')->getClientOriginalExtension(); // getting image extension
         $fileName = str_replace(' ', '_', $reg->name) . substr($reg->mobile, 0, 5) . '_1.'.$extension; // renameing image

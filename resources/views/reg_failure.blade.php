@@ -64,10 +64,11 @@
                     <h2 class="text-center wow">Oops, something went wrong</h2>
                     <div class="media service-box wow fadeInRight">
                         <p>
-
+                          
                           <li>
                             {{$message}}
                           </li>
+                          
                           <li>
                             <a href="{{ action('RegisterController@create') }}">Click here</a> to register again...
                           </li>
