@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="High Definition, Pragyan’s photography contest that wants people to see the world through your definitions of technology. Photography isn’t just an art powered by technology, it is also an innovative medium to discover and capture the scientific phenomena omnipresent around us.">
   <meta name="author" content="">
-  <title>Pragyan Photoshoot</title>
+  <title>Pragyan High Definition</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel='stylesheet' type='text/css'>
   <link href="{{asset('/css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{asset('/css/font-awesome.min.css')}}" rel="stylesheet">
@@ -34,18 +34,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Pragyan</a>
+          <a class="navbar-brand" href="https://www.pragyan.org/hd/">Pragyan HD</a>
         </div>
         <div class="collapse navbar-collapse navbar-right">
            <ul class="nav navbar-nav">
              <li class="scroll active"><a href="#home">Home</a></li>
-             <li class="scroll"><a href="#features">Pattern</a></li>
+             <li class="scroll"><a href="#pattern">Pattern</a></li>
              <li class="scroll"><a href="#prizes">Prizes</a></li>
-             <li class="scroll"><a href="#portfolio">Details</a></li>
+             <li class="scroll"><a href="#details">Details</a></li>
              <li class="scroll"><a href="#date">Imp Dates</a></li>
              <li class="scroll"><a href="#about">Rules</a></li>
              <li class="scroll"><a href="#animated-number">Judging</a></li>
-             <li class="scroll"><a href="#blog">Sponsors</a></li>
+             <li class="scroll"><a href="#sponsors">Sponsors</a></li>
              <li class="scroll"><a href={{action('RegisterController@create')}}>Register</a></li>
             </ul>
         </div>
@@ -55,7 +55,7 @@
 
   <section id="main-slider">
       <div class="owl-carousel">
-          <div class="item" style="background-image: url(images/hd.jpg);">
+          <div class="item" style="background-image: url(images/bg2c.jpeg);">
               <div class="slider-inner">
                   <div class="container">
                       <div class="row">
@@ -71,7 +71,7 @@
                   </div>
               </div>
           </div><!--/.item-->
-           <div class="item" style="background-image: url(images/photographycontest.jpg);">
+           <div class="item" style="background-image: url(images/bg1c.jpeg);">
               <div class="slider-inner">
                   <div class="container">
                       <div class="row">
@@ -92,7 +92,7 @@
       </div><!--/.owl-carousel-->
     </section>
     
-    <section id="features">
+    <section id="pattern">
         <div class="container ">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Our Pattern</h2>
@@ -103,7 +103,7 @@
                     <h2 class="text-center wow">Preliminary Round</h2>
                     <div class="media service-box wow fadeInRight">
                         <p>This will be an eliminative round for the event. Participants can submit a maximum of
-    three photographs for the round, based on any scientific phenomenaalong with
+    three photographs for the round, based on any scientific phenomena along with
     brief descriptions of the photographs captured.</p>
                     </div>
 
@@ -150,7 +150,7 @@
                                 <div class="entry-thumbnail">
                                 </div>
 
-                                <h2 class="entry-title"><a href="#">Special Prize</a></h2>
+                                <h2 class="entry-title">Special Prize</h2>
                             </header>
 
                             <div class="entry-content">
@@ -171,16 +171,15 @@
                             <div class="media-body">
                                 <header class="entry-header">
 
-                                    <h2 class="entry-title"><a href="#">Judge's Prize</a></h2>
+                                    <h2 class="entry-title">Judge's Prize</h2>
                                 </header>
 
                                 <div class="entry-content">
                                     <P>The top 3 contestants with highest cumulative scores at the end of final round will be
 awarded prizes in the order: Winner, First Runner‐up and Second Runner‐up. 
-Top winners may get an opportunity to collaboratively work with Judge 1 or Judge 2 
-on their upcoming photography projects.
-The  top  winners  and  the shortlisted  participants  will  be  getting  75$  worth  500px 
-accounts with full access.</P>
+All the top entries will be judged by Mr. Chandrashekhar Singh. Top winners may get an opportunity to intern with Pixelscapes.
+The  top  winners  and  the shortlisted  participants  will  be  getting  <strong>$75  worth  500px 
+accounts</strong> with full access. </P>
 
                                 </div>
 
@@ -195,25 +194,27 @@ accounts with full access.</P>
         </div>
         <div class="container" style="padding-bottom:100px">
             <div class="media service-box wow fadeInRight">
-                       <p><b>Winners  will  get  free  6  months  subscription  for  Inspiro  India  and  Smart
+                       <p><b>
+Prizes worth <i class="fa fa-inr" title="INR"></i> 70,000 to be won<br/>
 
-Photography along with 1 year subscription on Ezine on Magster. Top participants 
+Winners  will  get  free  6  months  subscription  for  Inspiro  India  and  Smart
+
+Photography along with 1 year subscription on Ezine on Magzter. <br/>
 
 The winning photographs will be featured in Inspiro India and Smart Photography 
 
-magazines.
+magazines.<br/>
 
-Free 3 month subscription on Ezine on Magster for all participants.  </b></p>    </div>
+Free 3 month subscription to Ezine on Magzter for all participants.  </b></p>    </div>
         </div>
     </section>
 
 
 
-    <section id="portfolio">
+    <section id="details">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Details</h2>
-                <p class="text-center wow fadeInDown">The Photography Specifications are listed as follows:</p>
             </div>
             <div class="container specs">
                 <div class="col-md-6">
@@ -250,7 +251,6 @@ Free 3 month subscription on Ezine on Magster for all participants.  </b></p>   
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown" style="color:#f5f5f5">Important Dates</h2>
-                <p class="text-center wow fadeInDown">Some important dates:</p>
             </div>
 
             <div class="row text-center ">
@@ -304,17 +304,13 @@ Free 3 month subscription on Ezine on Magster for all participants.  </b></p>   
     <section id="about">
         <div class="container">
 
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">RULES</h2>
-                <p class="text-center wow fadeInDown">The Rules and Regualations that has to be followed throughout the photography contest are:</p>
-            </div>
             <div class="row"> 
             <div class="col-sm-12 wow fadeInRight rules">
               <h3 class="column-title">Instructions</h3>
                 <ul>
-                  <li><p class="wow fadeInDown">Like our Facebook page Pragyan to be eligible to participate in this competition.</p></li>
+                  <li><p class="wow fadeInDown"><a href="https://www.facebook.com/pragyan.nitt">Like our Facebook page Pragyan</a> to be eligible to participate in this competition.</p></li>
                   <li><p class="wow fadeInDown">Click an original picture which conforms to all the rules mentioned below.</p></li>
-                  <li><p class="wow fadeInDown">Submit your entries to highdefinition@pragyan.org</p></li>
+                  <li><p class="wow fadeInDown"><a href="{{action('RegisterController@create')}}">Register here</a></p></li>
                 </ul>
             </div>
             </div>
@@ -323,12 +319,11 @@ Free 3 month subscription on Ezine on Magster for all participants.  </b></p>   
                     <h3 class="column-title"></h3>
                     <!-- 16:9 aspect ratio -->
                     <div class="embed-responsive embed-responsive-16by9">
-                        <img src="images/rules.jpg">
+                        <img src="images/rules.jpeg">
                     </div>
                 </div>
 
                 <div class="col-sm-6 wow fadeInRight rules">
-                    <h3 class="column-title">Rules</h3>
                       <ul>
                         <li><p class="wow fadeInDown">This is an <b>INDIVIDUAL</b> event and is open for ALL.</p></li>
                         <li><p class="wow fadeInDown">Entries with offensive or inappropriate content will be disqualified.</p></li>
@@ -378,7 +373,7 @@ Free 3 month subscription on Ezine on Magster for all participants.  </b></p>   
             </div>
         </div>
     </section><!--/#animated-number-->
-    <section id="blog" style="">
+    <section id="sponsors" style="">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Our Sponsors</h2>
@@ -407,7 +402,7 @@ Free 3 month subscription on Ezine on Magster for all participants.  </b></p>   
                 <h3>Event Partners</h3>
                 
                 <div class="row">
-                  <div class="row"><img src="{{asset('images/logos/IIP.jpg')}}"></div>
+                  <div class="row"><img src="{{asset('images/logos/Inspiro.jpg')}}"></div>
                   <div class="row">Inspiro India</div>
                 </div>
 

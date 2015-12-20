@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Validator;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -46,6 +46,15 @@ class RegisterController extends Controller
      */
     public function store(Request $request)
     {
+	    $v = Validator::make($request->all(), [
+		    'photo1'  => 'required|max:8192|mimes:jpeg,jpg',
+			    'photo2'  => 'max:8192|mimes:jpeg,jpg',
+			    'photo3'  => 'max:8192|mimes:jpeg,jpg',
+            ]);
+	    if ($v->fails())
+            {
+		    return view('reg_failure', array('message'=>'Please check file size and type...'));
+            }
         //
         $reg = new Register;
         $reg->name = $request->get('name');
@@ -91,7 +100,7 @@ class RegisterController extends Controller
         curl_setopt($ch, CURLOPT_URL,"https://www.google.com/recaptcha/api/siteverify");
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS,
-            "secret=6Le9yRITAAAAAGyxQbEv040L2ki_b0oMT3NnSGoV&response=$res");
+            "secret=6Leu1BATAAAAAF5daGaPmLoWB8ddj27By7JTlQOw&response=$res");
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $api_res = curl_exec ($ch);
@@ -126,7 +135,7 @@ class RegisterController extends Controller
      */
     public function edit($id)
     {
-        //
+	    //
     }
 
     /**
@@ -151,4 +160,11 @@ class RegisterController extends Controller
     {
         //
     }
+
+	public function view()
+	{
+	        $registrants = Register::paginate(50);
+		$registrants->setPath('santhosh');
+		return view('registrants',compact('registrants'));
+	}
 }

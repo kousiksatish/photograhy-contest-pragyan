@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Pragyan Photoshoot</title>
+  <title>Pragyan High Definition</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel='stylesheet' type='text/css'>
   <link href="{{asset('/css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{asset('/css/font-awesome.min.css')}}" rel="stylesheet">
@@ -34,7 +34,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Pragyan</a>
+          <a class="navbar-brand" href="https://www.pragyan.org/hd/">Pragyan</a>
         </div>
         <div class="collapse navbar-collapse navbar-right">
            <ul class="nav navbar-nav">
@@ -133,7 +133,7 @@
       <label class="control-label col-sm-2" for="photo1"><center>Photograph 1</center></label>
       <div class="col-sm-6">
           <input type="file" name="photo1" id="photo1" required>
-          <textarea class="form-control"placeholder="Small description..." name="desc1" required></textarea>
+          <textarea maxlength="400" class="form-control" placeholder="Brief description" name="desc1" required></textarea>
           <canvas id="imageCanvas1"></canvas>
       </div>
     </div>
@@ -142,7 +142,7 @@
       <label class="control-label col-sm-2" for="photo2"><center>Photograph 2 (optional)</center></label>
       <div class="col-sm-6">
           <input type="file" name="photo2" id="photo2" >
-          <textarea class="form-control" placeholder="Small description..." name="desc2" ></textarea>
+          <textarea maxlength="400" class="form-control" placeholder="Brief description" name="desc2" ></textarea>
           <canvas id="imageCanvas2"></canvas>
       </div>
     </div>
@@ -151,14 +151,14 @@
       <label class="control-label col-sm-2" for="photo3"><center>Photograph 3 (optional)</center></label>
       <div class="col-sm-6">
           <input type="file" name="photo3" id="photo3" >
-          <textarea class="form-control" placeholder="Small description..." name="desc3" ></textarea>
+          <textarea maxlength="400" class="form-control" placeholder="Brief description" name="desc3" ></textarea>
           <canvas id="imageCanvas3"></canvas>
       </div>
     </div>
     <div class="form-group">
   <label class="control-label col-sm-2"><center></center></label>
     <div class="col-sm-6">
-      <div class="g-recaptcha" data-sitekey="6Le9yRITAAAAAH_8LEUx7Q-Ix-ZSkCwjIz3ZiFcK"></div>
+      <div class="g-recaptcha" data-sitekey="6Leu1BATAAAAAKXarCAApmyU5p3qU7lczpHBMhBP"></div>
     </div>
   </div>
     
