@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Redirect;
 use Validator;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -176,8 +178,43 @@ class RegisterController extends Controller
 
 	public function view()
 	{
-	        $registrants = Register::paginate(50);
-		$registrants->setPath('santhosh');
-		return view('registrants',compact('registrants'));
+	    $registrants = Register::paginate(2);
+		$registrants->setPath('registrants');
+		return view('admin/view',compact('registrants'));
 	}
+
+    public function view2()
+    {
+        $registrants = Register::paginate(2);
+        $registrants->setPath('registrants');
+        return view('admin/view2',compact('registrants'));
+    }
+
+
+    public function admin()
+    {
+        if(Session::has('admin'))
+            return redirect('registrants');
+        return view('admin/login');
+    }
+
+    public function adminCheck(Request $request)
+    {
+        $username = $request->get('username');
+        $password = $request->get('password');
+
+        if($username == env('ADMIN_USERNAME') && $password == env('ADMIN_PASSWORD'))
+        {
+            Session::put('admin', $username);
+            return redirect('/registrants');
+        }
+        else
+            return redirect('/admin')->with('message', 'Incorrect username or password');
+    }
+
+    public function logout()
+    {
+        Session::flush();
+        return redirect('/')->with('message', 'Successfully logged out');
+    }
 }

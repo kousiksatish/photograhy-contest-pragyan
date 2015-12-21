@@ -14,4 +14,11 @@
 Route::get('/', 'RegisterController@index');
 Route::get('/register', 'RegisterController@create');
 Route::post('/register', 'RegisterController@store');
-Route::get('/santhosh', 'RegisterController@view');
+Route::get('/admin', 'RegisterController@admin');
+Route::post('/admin', 'RegisterController@adminCheck');
+Route::get('/logout', 'RegisterController@logout');
+Route::group(['middleware' => 'AdminAuth'], function() {
+	Route::get('/registrants', 'RegisterController@view');
+	Route::get('/registrants2', 'RegisterController@view2');
+});
+
