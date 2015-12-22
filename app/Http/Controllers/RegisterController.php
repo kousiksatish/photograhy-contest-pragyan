@@ -48,7 +48,7 @@ class RegisterController extends Controller
      */
     public function store(Request $request)
     {
-	    $v = Validator::make($request->all(), [
+	    	    $v = Validator::make($request->all(), [
 		    'photo1'  => 'required|max:8192|mimes:jpeg,jpg',
 			    'photo2'  => 'max:8192|mimes:jpeg,jpg',
 			    'photo3'  => 'max:8192|mimes:jpeg,jpg',
@@ -73,18 +73,18 @@ class RegisterController extends Controller
             $reg->coll_year = $request->get('year');
         }
 
-        $rules = array(
-                'photo1'=> 'required|image|max:8000',
-                'photo2'=> 'image|max:8000',
-                'photo3'=> 'image|max:8000'
+/*        $rules = array(
+                'photo1'=> 'required|image|max:8192',
+                'photo2'=> 'image|max:8192',
+                'photo3'=> 'image|max:8192'
             );
 
         $validator = Validator::make($request->all(), $rules);
 
         if ($validator->fails())
         {
-            return view('reg_failure', array('message'=>'File uploaded not a <8mb sized image'));
-        }
+            return view('reg_failure', array('message'=>'Please check file size and type'));
+        }*/
         $destinationPath = base_path() . '/public/prelims/'; // upload path
         $extension = $request->file('photo1')->getClientOriginalExtension(); // getting image extension
         $fileName = str_replace(' ', '_', $reg->name) . substr($reg->mobile, 0, 5) . '_1.'.$extension; // renameing image
@@ -178,7 +178,7 @@ class RegisterController extends Controller
 
 	public function view()
 	{
-	    $registrants = Register::paginate(2);
+	    $registrants = Register::paginate(10);
 		$registrants->setPath('registrants');
 		return view('admin/view',compact('registrants'));
 	}
@@ -200,12 +200,11 @@ class RegisterController extends Controller
 
     public function adminCheck(Request $request)
     {
-        $username = $request->get('username');
-        $password = $request->get('password');
+        $password = sha1($request->get('password'));
 
-        if($username == env('ADMIN_USERNAME') && $password == env('ADMIN_PASSWORD'))
+        if( $password == env('ADMIN_PASSWORD'))
         {
-            Session::put('admin', $username);
+            Session::put('admin', 'admin');
             return redirect('/registrants');
         }
         else
